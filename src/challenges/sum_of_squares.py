@@ -1,5 +1,10 @@
 """
-Determine whether a number is the sum of two squares, such as 17 = 16 +1
+Determine whether a number is the sum of two squares.
+
+Example:
+   17 = 16 +1
+
+https://www.careercup.com/question?id=5666912267665408
 """
 from math import ceil, sqrt
 

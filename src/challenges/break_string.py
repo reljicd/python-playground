@@ -7,13 +7,13 @@ Example:
     Given a dictionary ["Cat", "Mat", "Ca", "tM", "at", "C", "Dog", "og", "Do"]
     return 1
 
-We can break the sentences in three ways, as follows:
+    We can break the sentences in three ways, as follows:
     CatMat = Cat Mat break 1
     CatMat = Ca tM at break 2
     CatMat = C at Mat break 2
-But the first way has the minimum break, thus return 1
+    But the first way has the minimum break, thus return 1
 
-public int wordBreak(String s, Set<String> dict) {}
+https://www.careercup.com/question?id=5682428306784256
 """
 
 

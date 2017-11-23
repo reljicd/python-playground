@@ -1,15 +1,20 @@
 """
-Give a matrix, for example
+Give a matrix, for example:
+
 1 0 0 1 0
 0 0 1 0 1
 0 0 0 1 0
 1 0 1 0 1
-Find if there is a rectangle in the matrix, all four corners are 1
 
-For the example:  there is only one rectangle, that is
-1 0 1
-0 1 0
-1 0 1
+Find if there is a rectangle in the matrix, all four corners are 1.
+
+Example:
+    there is only one rectangle, that is
+    1 0 1
+    0 1 0
+    1 0 1
+
+https://www.careercup.com/question?id=5657983299092480
 """
 
 
