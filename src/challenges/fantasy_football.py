@@ -38,12 +38,12 @@ def calculate_score_2(predictions, actuals):
     # and if not, set score of that node to False.
     # Do it bottoms up
     for i in list(range(0, len(scores) // 2))[::-1]:
-        scores[i] = scores[2 * i + 1] and scores[2 * i + 2]
+        scores[i] = scores[i] and scores[2 * i + 1] and scores[2 * i + 2]
 
     return sum(scores)
 
 
-# Binary tree solution
+# Binary tree solution alt
 def calculate_score_3(predictions, actuals):
     scores = [prediction == actual for prediction, actual in zip(predictions, actuals)]
     # Invert scores, construct binary tree
@@ -52,6 +52,6 @@ def calculate_score_3(predictions, actuals):
     # and if not, set score of that node to False.
     # Do it bottoms up
     for i in reversed(range(0, len(scores) // 2)):
-        scores[i] = scores[2 * i + 1] and scores[2 * i + 2]
+        scores[i] = scores[i] and scores[2 * i + 1] and scores[2 * i + 2]
 
     return sum(scores)
