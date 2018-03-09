@@ -1,3 +1,55 @@
+"""
+A  B   C   D
+  B     D
+     D
+
+0 = Left team won
+1 = Right team won
+
+prediction 101
+actual 101
+score = 3
+
+====================
+
+prediction: 111
+actual: 101
+score: 1
+
+====================
+
+calculateScore(prediction, actual) => return score
+
+calculateScore([1,1,0,0,1,1,0], [1,0,0,0,1,1,1])
+
+pred: 1100 11 0
+actual: 1000 11 1
+score: 4
+
+11 v.s. 11
+if agree in this round, look at last round
+else disagree
+
+Number Teams: 2^X
+
+Size of first round: Teams/2
+Size of second round: Teams/4
+
+NumberOfBits = T/2 + T/4 + T/8 ....
+
+111 => 4 teams
+T = 4  NumberBits = 3
+T = 8  NumberBits = 7
+
+Number bits to represent match: Teams - 1
+
+2^0 + 2^1 + 2^2...
+
+X A  Y B  Z C W D
+ A   B     C  D
+   B         D
+        D
+"""
 import math
 import itertools
 
